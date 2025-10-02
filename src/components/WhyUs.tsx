@@ -36,7 +36,7 @@ const WhyUs = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Why Choose Tech Solutions?
+            Why Choose ArifTechSolution?
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Combining technical excellence with deep understanding of Ethiopian business needs

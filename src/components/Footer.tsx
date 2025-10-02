@@ -9,9 +9,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">TS</span>
+                <span className="text-white font-bold text-xl">AT</span>
               </div>
-              <span className="text-xl font-bold">Tech Solutions</span>
+              <span className="text-xl font-bold">ArifTechSolution</span>
             </div>
             <p className="text-white/70 leading-relaxed">
               Empowering Ethiopian SMEs with custom digital solutions. From websites to bots, we build technology that drives growth.
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8 text-center text-white/60">
-          <p>&copy; {currentYear} Tech Solutions. All rights reserved.</p>
+          <p>&copy; {currentYear} ArifTechSolution. All rights reserved.</p>
         </div>
       </div>
     </footer>

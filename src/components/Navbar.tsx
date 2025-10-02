@@ -18,9 +18,9 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">TS</span>
+              <span className="text-white font-bold text-xl">AT</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Tech Solutions</span>
+            <span className="text-xl font-bold text-foreground">ArifTechSolution</span>
           </div>
           
           {/* Desktop Navigation */}
