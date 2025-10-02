@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "services": "Services",
+    "whyUs": "Why Us",
+    "industries": "Industries",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Empowering Ethiopian SMEs",
+    "title": "Transform Your Business with",
+    "titleHighlight": "Digital Solutions",
+    "description": "Custom websites, intelligent Telegram bots, and powerful software solutions designed specifically for Ethiopian businesses ready to thrive in the digital age.",
+    "getStarted": "Get Started",
+    "viewWork": "View Our Work",
+    "certified": "CS Degree Certified",
+    "projects": "100+ Projects Delivered",
+    "expertise": "Local Expertise"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete digital solutions to elevate your business in Ethiopia's growing digital economy",
+    "website": {
+      "title": "Custom Websites",
+      "description": "Responsive e-commerce sites built with React and Node.js, featuring SEO optimization and Telebirr integration to complement your social media presence.",
+      "features": {
+        "ecommerce": "E-commerce Ready",
+        "responsive": "Mobile Responsive",
+        "seo": "SEO Optimized",
+        "payment": "Payment Integration"
+      }
+    },
+    "bot": {
+      "title": "Telegram Bots",
+      "description": "Python-based intelligent bots for automated customer service, order management, and real-time alerts tailored to your business needs.",
+      "features": {
+        "automation": "24/7 Automation",
+        "orders": "Order Processing",
+        "support": "Customer Support",
+        "workflows": "Custom Workflows"
+      }
+    },
+    "software": {
+      "title": "Custom Software",
+      "description": "Tailored applications including inventory systems, CRM tools, and business management platforms using MongoDB and SQL databases.",
+      "features": {
+        "inventory": "Inventory Systems",
+        "crm": "CRM Solutions",
+        "analytics": "Data Analytics",
+        "cloud": "Cloud Integration"
+      }
+    },
+    "support": {
+      "title": "IT Support",
+      "description": "Comprehensive IT audits, ongoing maintenance, cloud optimization, and database management to keep your systems running smoothly.",
+      "features": {
+        "audits": "System Audits",
+        "maintenance": "24/7 Maintenance",
+        "cloudSetup": "Cloud Setup",
+        "performance": "Performance Tuning"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Why Choose ArifTechSolution?",
+    "subtitle": "We understand Ethiopian businesses and deliver solutions that work in our local context",
+    "education": {
+      "title": "Computer Science Degree",
+      "description": "Solid foundation in software engineering, algorithms, and system design"
+    },
+    "experience": {
+      "title": "100+ Projects Delivered",
+      "description": "Proven track record with Ethiopian SMEs across various industries"
+    },
+    "local": {
+      "title": "Ethiopian Market Expert",
+      "description": "Deep understanding of local business needs, payment systems, and regulations"
+    },
+    "support": {
+      "title": "Ongoing Support & Training",
+      "description": "We don't just deliver—we ensure your team can use and maintain the solution"
+    },
+    "quality": {
+      "title": "Quality Code & Documentation",
+      "description": "Clean, maintainable code with full documentation. You own everything we build"
+    },
+    "flexible": {
+      "title": "Flexible Payment Terms",
+      "description": "50% upfront, 50% on completion. No hidden fees or surprises"
+    }
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "Specialized solutions for Ethiopian businesses across multiple sectors",
+    "retail": {
+      "title": "Retail & E-commerce",
+      "description": "Inventory management, online stores with Telebirr payment integration"
+    },
+    "food": {
+      "title": "Food & Beverage",
+      "description": "Order management bots, delivery tracking, and customer loyalty systems"
+    },
+    "education": {
+      "title": "Education",
+      "description": "Student management systems, online learning platforms, and admin tools"
+    },
+    "health": {
+      "title": "Healthcare",
+      "description": "Appointment scheduling, patient records, and clinic management software"
+    },
+    "hospitality": {
+      "title": "Hotels & Tourism",
+      "description": "Booking systems, guest management, and automated customer service"
+    },
+    "finance": {
+      "title": "Financial Services",
+      "description": "Transaction tracking, reporting tools, and secure data management"
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "Flexible packages designed for Ethiopian SMEs. All prices in ETB (15% VAT applies)",
+    "basic": {
+      "name": "Basic",
+      "description": "Perfect for getting started",
+      "features": {
+        "item1": "Professional Website or Telegram Bot",
+        "item2": "Mobile Responsive Design",
+        "item3": "Basic SEO Setup",
+        "item4": "1 Month Support",
+        "item5": "Source Code Included"
+      }
+    },
+    "standard": {
+      "name": "Standard",
+      "description": "Most popular choice",
+      "features": {
+        "item1": "Professional Website + Telegram Bot",
+        "item2": "Advanced SEO & Analytics",
+        "item3": "Payment Integration (Telebirr)",
+        "item4": "3 Months Support",
+        "item5": "Free Training Session",
+        "item6": "Priority Support"
+      }
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Complete solution",
+      "features": {
+        "item1": "Full Custom Application",
+        "item2": "Advanced Features & Integration",
+        "item3": "Database Setup & Management",
+        "item4": "6 Months Support",
+        "item5": "Dedicated Account Manager",
+        "item6": "Regular Updates & Maintenance",
+        "item7": "Staff Training Program"
+      }
+    },
+    "popular": "Popular",
+    "getStarted": "Get Started",
+    "terms": "Payment Terms: 50% upfront, 50% on completion",
+    "extras": "All extras and additional features are billed separately"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "subtitle": "Get a free consultation and project estimate. Let's discuss how we can help you succeed.",
+    "formTitle": "Send Us a Message",
+    "name": "Your Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+251 9XX XXX XXX",
+    "message": "Tell Us About Your Project",
+    "messagePlaceholder": "I need a website for my retail business...",
+    "submit": "Get Free Consultation",
+    "contactTitle": "Get in Touch",
+    "contactDescription": "We're here to answer your questions and discuss how we can help bring your digital vision to life. Reach out through any of these channels.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "location": "Addis Ababa, Ethiopia",
+    "quickFacts": "Quick Facts",
+    "fact1": "✓ Free initial consultation",
+    "fact2": "✓ Project delivery starts in 10 days",
+    "fact3": "✓ Flexible payment: 50% upfront, 50% on completion",
+    "fact4": "✓ All source code included"
+  },
+  "footer": {
+    "description": "Empowering Ethiopian SMEs with cutting-edge technology solutions. From websites to custom software, we're your trusted tech partner.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "ourTeam": "Our Team",
+    "careers": "Careers",
+    "contact": "Contact",
+    "services": "Services",
+    "websites": "Websites",
+    "telegramBots": "Telegram Bots",
+    "customSoftware": "Custom Software",
+    "itSupport": "IT Support",
+    "resources": "Resources",
+    "blog": "Blog",
+    "caseStudies": "Case Studies",
+    "faq": "FAQ",
+    "documentation": "Documentation",
+    "rights": "All rights reserved."
+  }
+}

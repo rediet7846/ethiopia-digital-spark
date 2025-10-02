@@ -1,62 +1,65 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
-
-const pricingTiers = [
-  {
-    name: "Basic",
-    price: "20,000",
-    description: "Perfect for getting started",
-    features: [
-      "Professional Website or Telegram Bot",
-      "Mobile Responsive Design",
-      "Basic SEO Setup",
-      "1 Month Support",
-      "Source Code Included"
-    ],
-    popular: false
-  },
-  {
-    name: "Standard",
-    price: "50,000",
-    description: "Most popular choice",
-    features: [
-      "Professional Website + Telegram Bot",
-      "Advanced SEO & Analytics",
-      "Payment Integration (Telebirr)",
-      "3 Months Support",
-      "Free Training Session",
-      "Priority Support"
-    ],
-    popular: true
-  },
-  {
-    name: "Premium",
-    price: "100,000",
-    description: "Complete solution",
-    features: [
-      "Full Custom Application",
-      "Advanced Features & Integration",
-      "Database Setup & Management",
-      "6 Months Support",
-      "Dedicated Account Manager",
-      "Regular Updates & Maintenance",
-      "Staff Training Program"
-    ],
-    popular: false
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
+  const { t } = useTranslation();
+  
+  const pricingTiers = [
+    {
+      name: t('pricing.basic.name'),
+      price: "20,000",
+      description: t('pricing.basic.description'),
+      features: [
+        t('pricing.basic.features.item1'),
+        t('pricing.basic.features.item2'),
+        t('pricing.basic.features.item3'),
+        t('pricing.basic.features.item4'),
+        t('pricing.basic.features.item5')
+      ],
+      popular: false
+    },
+    {
+      name: t('pricing.standard.name'),
+      price: "50,000",
+      description: t('pricing.standard.description'),
+      features: [
+        t('pricing.standard.features.item1'),
+        t('pricing.standard.features.item2'),
+        t('pricing.standard.features.item3'),
+        t('pricing.standard.features.item4'),
+        t('pricing.standard.features.item5'),
+        t('pricing.standard.features.item6')
+      ],
+      popular: true
+    },
+    {
+      name: t('pricing.premium.name'),
+      price: "100,000",
+      description: t('pricing.premium.description'),
+      features: [
+        t('pricing.premium.features.item1'),
+        t('pricing.premium.features.item2'),
+        t('pricing.premium.features.item3'),
+        t('pricing.premium.features.item4'),
+        t('pricing.premium.features.item5'),
+        t('pricing.premium.features.item6'),
+        t('pricing.premium.features.item7')
+      ],
+      popular: false
+    }
+  ];
+
   return (
     <section id="pricing" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Transparent Pricing
+            {t('pricing.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Flexible packages designed for Ethiopian SMEs. All prices in ETB (15% VAT applies)
+            {t('pricing.subtitle')}
           </p>
         </div>
         
@@ -73,7 +76,7 @@ const Pricing = () => {
             >
               {tier.popular && (
                 <div className="absolute top-0 right-0 bg-secondary text-white px-4 py-1 text-sm font-semibold">
-                  Popular
+                  {t('pricing.popular')}
                 </div>
               )}
               
@@ -106,15 +109,15 @@ const Pricing = () => {
                 }`}
                 size="lg"
               >
-                Get Started
+                {t('pricing.getStarted')}
               </Button>
             </Card>
           ))}
         </div>
         
         <div className="text-center mt-12 text-muted-foreground">
-          <p className="mb-2">Payment Terms: 50% upfront, 50% on completion</p>
-          <p>All extras and additional features are billed separately</p>
+          <p className="mb-2">{t('pricing.terms')}</p>
+          <p>{t('pricing.extras')}</p>
         </div>
       </div>
     </section>

@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background with gradient overlay */}
@@ -20,43 +23,42 @@ const Hero = () => {
         <div className="max-w-3xl animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
             <span className="h-2 w-2 bg-secondary rounded-full animate-pulse" />
-            <span className="text-white/90 text-sm font-medium">Empowering Ethiopian SMEs</span>
+            <span className="text-white/90 text-sm font-medium">{t('hero.badge')}</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Transform Your Business with
+            {t('hero.title')}
             <span className="block gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Digital Solutions
+              {t('hero.titleHighlight')}
             </span>
           </h1>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Custom websites, intelligent Telegram bots, and powerful software solutions 
-            designed specifically for Ethiopian businesses ready to thrive in the digital age.
+            {t('hero.description')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-strong group">
-              Get Started
+              {t('hero.getStarted')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
-              View Our Work
+              {t('hero.viewWork')}
             </Button>
           </div>
           
           <div className="flex flex-wrap gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-secondary" />
-              <span>CS Degree Certified</span>
+              <span>{t('hero.certified')}</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-secondary" />
-              <span>100+ Projects Delivered</span>
+              <span>{t('hero.projects')}</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-secondary" />
-              <span>Local Expertise</span>
+              <span>{t('hero.expertise')}</span>
             </div>
           </div>
         </div>

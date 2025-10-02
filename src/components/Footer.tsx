@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
   
   return (
     <footer className="bg-foreground text-white py-12">
@@ -14,25 +17,25 @@ const Footer = () => {
               <span className="text-xl font-bold">ArifTechSolution</span>
             </div>
             <p className="text-white/70 leading-relaxed">
-              Empowering Ethiopian SMEs with custom digital solutions. From websites to bots, we build technology that drives growth.
+              {t('footer.description')}
             </p>
           </div>
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-bold text-lg mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-white/70 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#pricing" className="text-white/70 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#contact" className="text-white/70 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#services" className="text-white/70 hover:text-white transition-colors">{t('nav.services')}</a></li>
+              <li><a href="#pricing" className="text-white/70 hover:text-white transition-colors">{t('nav.pricing')}</a></li>
+              <li><a href="#contact" className="text-white/70 hover:text-white transition-colors">{t('nav.contact')}</a></li>
             </ul>
           </div>
           
           {/* Contact */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact</h3>
+            <h3 className="font-bold text-lg mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-2 text-white/70">
-              <li>Addis Ababa, Ethiopia</li>
+              <li>{t('cta.location')}</li>
               <li>contact@techsolutions.et</li>
               <li>+251 9XX XXX XXX</li>
             </ul>
@@ -40,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8 text-center text-white/60">
-          <p>&copy; {currentYear} ArifTechSolution. All rights reserved.</p>
+          <p>&copy; {currentYear} ArifTechSolution. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

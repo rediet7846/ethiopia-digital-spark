@@ -1,30 +1,43 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap, Users, Target, Shield } from "lucide-react";
-
-const highlights = [
-  {
-    icon: GraduationCap,
-    title: "Expert Team",
-    description: "CS degree certified professionals with proven track record in Python, React, Node.js, MongoDB, and SQL."
-  },
-  {
-    icon: Target,
-    title: "Local Expertise",
-    description: "Deep understanding of Ethiopian market needs, from social media integration to Telebirr payment solutions."
-  },
-  {
-    icon: Users,
-    title: "Customer-First",
-    description: "Background in customer support ensures reliable service, clear communication, and long-term partnership."
-  },
-  {
-    icon: Shield,
-    title: "Proven Results",
-    description: "Successfully delivered solutions for retail, tourism, fintech, and NGO sectors across Ethiopia."
-  }
-];
+import { GraduationCap, Briefcase, MapPin, Headphones, FileCode, CreditCard } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const WhyUs = () => {
+  const { t } = useTranslation();
+  
+  const highlights = [
+    {
+      icon: GraduationCap,
+      title: t('whyUs.education.title'),
+      description: t('whyUs.education.description')
+    },
+    {
+      icon: Briefcase,
+      title: t('whyUs.experience.title'),
+      description: t('whyUs.experience.description')
+    },
+    {
+      icon: MapPin,
+      title: t('whyUs.local.title'),
+      description: t('whyUs.local.description')
+    },
+    {
+      icon: Headphones,
+      title: t('whyUs.support.title'),
+      description: t('whyUs.support.description')
+    },
+    {
+      icon: FileCode,
+      title: t('whyUs.quality.title'),
+      description: t('whyUs.quality.description')
+    },
+    {
+      icon: CreditCard,
+      title: t('whyUs.flexible.title'),
+      description: t('whyUs.flexible.description')
+    }
+  ];
+
   return (
     <section className="py-24 gradient-hero relative overflow-hidden">
       {/* Decorative elements */}
@@ -36,14 +49,14 @@ const WhyUs = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Why Choose ArifTechSolution?
+            {t('whyUs.title')}
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Combining technical excellence with deep understanding of Ethiopian business needs
+            {t('whyUs.subtitle')}
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {highlights.map((item, index) => {
             const Icon = item.icon;
             return (

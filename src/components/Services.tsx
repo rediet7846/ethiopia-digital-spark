@@ -1,43 +1,66 @@
 import { Card } from "@/components/ui/card";
 import { Globe, Bot, Code, Wrench } from "lucide-react";
-
-const services = [
-  {
-    icon: Globe,
-    title: "Custom Websites",
-    description: "Responsive e-commerce sites built with React and Node.js, featuring SEO optimization and Telebirr integration to complement your social media presence.",
-    features: ["E-commerce Ready", "Mobile Responsive", "SEO Optimized", "Payment Integration"]
-  },
-  {
-    icon: Bot,
-    title: "Telegram Bots",
-    description: "Python-based intelligent bots for automated customer service, order management, and real-time alerts tailored to your business needs.",
-    features: ["24/7 Automation", "Order Processing", "Customer Support", "Custom Workflows"]
-  },
-  {
-    icon: Code,
-    title: "Custom Software",
-    description: "Tailored applications including inventory systems, CRM tools, and business management platforms using MongoDB and SQL databases.",
-    features: ["Inventory Systems", "CRM Solutions", "Data Analytics", "Cloud Integration"]
-  },
-  {
-    icon: Wrench,
-    title: "IT Support",
-    description: "Comprehensive IT audits, ongoing maintenance, cloud optimization, and database management to keep your systems running smoothly.",
-    features: ["System Audits", "24/7 Maintenance", "Cloud Setup", "Performance Tuning"]
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
+  const services = [
+    {
+      icon: Globe,
+      title: t('services.website.title'),
+      description: t('services.website.description'),
+      features: [
+        t('services.website.features.ecommerce'),
+        t('services.website.features.responsive'),
+        t('services.website.features.seo'),
+        t('services.website.features.payment')
+      ]
+    },
+    {
+      icon: Bot,
+      title: t('services.bot.title'),
+      description: t('services.bot.description'),
+      features: [
+        t('services.bot.features.automation'),
+        t('services.bot.features.orders'),
+        t('services.bot.features.support'),
+        t('services.bot.features.workflows')
+      ]
+    },
+    {
+      icon: Code,
+      title: t('services.software.title'),
+      description: t('services.software.description'),
+      features: [
+        t('services.software.features.inventory'),
+        t('services.software.features.crm'),
+        t('services.software.features.analytics'),
+        t('services.software.features.cloud')
+      ]
+    },
+    {
+      icon: Wrench,
+      title: t('services.support.title'),
+      description: t('services.support.description'),
+      features: [
+        t('services.support.features.audits'),
+        t('services.support.features.maintenance'),
+        t('services.support.features.cloudSetup'),
+        t('services.support.features.performance')
+      ]
+    }
+  ];
+  
   return (
     <section id="services" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Our Services
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Complete digital solutions to elevate your business in Ethiopia's growing digital economy
+            {t('services.subtitle')}
           </p>
         </div>
         

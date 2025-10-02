@@ -1,42 +1,55 @@
-import { ShoppingBag, Plane, Building2, Heart } from "lucide-react";
-
-const industries = [
-  {
-    icon: ShoppingBag,
-    name: "Retail & E-commerce",
-    description: "Enhance your social media sales with professional websites and automated order processing"
-  },
-  {
-    icon: Plane,
-    name: "Tourism & Hospitality",
-    description: "Modern booking systems and customer engagement tools for tour operators and hotels"
-  },
-  {
-    icon: Building2,
-    name: "Fintech & Finance",
-    description: "Secure applications and real-time alerts for digital payment solutions and financial services"
-  },
-  {
-    icon: Heart,
-    name: "NGOs & Social Impact",
-    description: "Affordable digital tools to amplify your mission and streamline operations"
-  }
-];
+import { ShoppingBag, Utensils, GraduationCap, Heart, Hotel, TrendingUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Industries = () => {
+  const { t } = useTranslation();
+  
+  const industries = [
+    {
+      icon: ShoppingBag,
+      name: t('industries.retail.title'),
+      description: t('industries.retail.description')
+    },
+    {
+      icon: Utensils,
+      name: t('industries.food.title'),
+      description: t('industries.food.description')
+    },
+    {
+      icon: GraduationCap,
+      name: t('industries.education.title'),
+      description: t('industries.education.description')
+    },
+    {
+      icon: Heart,
+      name: t('industries.health.title'),
+      description: t('industries.health.description')
+    },
+    {
+      icon: Hotel,
+      name: t('industries.hospitality.title'),
+      description: t('industries.hospitality.description')
+    },
+    {
+      icon: TrendingUp,
+      name: t('industries.finance.title'),
+      description: t('industries.finance.description')
+    }
+  ];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Industries We Serve
+            {t('industries.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Specialized solutions for Ethiopia's most dynamic sectors
+            {t('industries.subtitle')}
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
             return (

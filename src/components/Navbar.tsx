@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
   
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Contact", href: "#contact" }
+    { name: t('nav.services'), href: "#services" },
+    { name: t('nav.pricing'), href: "#pricing" },
+    { name: t('nav.contact'), href: "#contact" }
   ];
 
   return (
@@ -34,18 +37,22 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <LanguageSwitcher />
             <Button className="gradient-primary text-white shadow-medium">
-              Get Started
+              {t('hero.getStarted')}
             </Button>
           </div>
           
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Menu */}
@@ -64,7 +71,7 @@ const Navbar = () => {
               ))}
               <div className="px-4">
                 <Button className="w-full gradient-primary text-white shadow-medium">
-                  Get Started
+                  {t('hero.getStarted')}
                 </Button>
               </div>
             </div>
