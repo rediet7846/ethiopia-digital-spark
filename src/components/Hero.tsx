@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.jpg";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -16,6 +17,14 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/75" />
+        {/* Logo watermark */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img 
+            src={logo} 
+            alt="ArifTech Logo" 
+            className="w-1/2 max-w-2xl opacity-5 object-contain"
+          />
+        </div>
       </div>
       
       {/* Content */}
