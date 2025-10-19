@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img src={logo} alt="ArifTech Digital Solutions" className="h-10 w-auto brightness-0 invert" />
+              <img src={logo} alt="ArifTech Digital Solutions" className="h-14 w-auto brightness-0 invert object-contain" />
             </div>
             <p className="text-white/70 leading-relaxed">
               {t('footer.description')}
