@@ -47,12 +47,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-strong group">
-              {t('hero.getStarted')}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-strong group" asChild>
+              <a href="#contact">
+                {t('hero.getStarted')}
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
-              {t('hero.viewWork')}
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm" asChild>
+              <a href="#portfolio">
+                {t('hero.viewWork')}
+              </a>
             </Button>
           </div>
           

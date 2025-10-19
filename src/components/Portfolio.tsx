@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { ExternalLink } from "lucide-react";
 import portfolioSolar from "@/assets/portfolio-solar.png";
 import portfolioBoutique from "@/assets/portfolio-boutique.png";
+import portfolioJovani from "@/assets/portfolio-jovani.png";
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -23,6 +24,14 @@ const Portfolio = () => {
       link: "https://lova-boutique-vibe.lovable.app/",
       tags: ["E-commerce", "Fashion", "Luxury Retail"],
     },
+    {
+      id: 3,
+      title: "Jovani Car Rental",
+      description: t("portfolio.jovani.description"),
+      image: portfolioJovani,
+      link: "https://jovanis-drive-by-class.lovable.app/",
+      tags: ["Car Rental", "Booking System", "Premium Service"],
+    },
   ];
 
   return (
@@ -37,7 +46,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.id}
