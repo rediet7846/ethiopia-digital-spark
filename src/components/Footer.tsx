@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AT</span>
-              </div>
-              <span className="text-xl font-bold">ArifTechSolution</span>
+            <div className="mb-4">
+              <img src={logo} alt="ArifTech Digital Solutions" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/70 leading-relaxed">
               {t('footer.description')}
