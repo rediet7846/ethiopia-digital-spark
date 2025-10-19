@@ -161,6 +161,17 @@
     "terms": "Payment Terms: 50% upfront, 50% on completion",
     "extras": "All extras and additional features are billed separately"
   },
+  "portfolio": {
+    "title": "Our Work",
+    "subtitle": "Explore our successful projects and see how we've helped businesses thrive online",
+    "solar": {
+      "description": "Modern e-commerce platform for solar energy products with seamless shopping experience"
+    },
+    "boutique": {
+      "description": "Elegant online boutique showcasing timeless fashion with sophisticated design"
+    },
+    "viewProject": "View Project"
+  },
   "cta": {
     "title": "Ready to Transform Your Business?",
     "subtitle": "Get a free consultation and project estimate. Let's discuss how we can help you succeed.",
